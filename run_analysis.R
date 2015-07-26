@@ -93,5 +93,5 @@ tidyData = tidyData[,names(tidyData) != 'activityType']
 tidyData = merge(tidyData,rootActivity,by='ActivityID',all.x=T)
 
 # Writing
-write.table(tidyData, './tidyData.txt',row.names=T,sep='\t')
+write.table(tidyData, './tidyData.txt',row.names=F,sep='\t')
 
